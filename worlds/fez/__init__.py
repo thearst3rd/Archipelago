@@ -102,6 +102,10 @@ class FezWorld(World):
             for idx in ability_idx:
                 main_items_player[idx].count = 0
 
+        # Add in a jetpack if the option is enabled
+        if self.options.enable_jetpack:
+            jetpack_idx = [idx for idx, item in enumerate(main_items) if "Jetpack" in item.name][0]
+            main_items[jetpack_idx].count = 1
 
         # Account for removed clock anti locations if not shuffling
         clock_tower_filler_cnt = 0
