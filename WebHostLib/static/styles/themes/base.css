@@ -39,6 +39,14 @@ html{
     margin-right: 7px;
 }
 
+#base-header #site-title h2{
+    color: #ffffff;
+    text-shadow: 1px 1px 7px #000000;
+    font-kerning: none;
+    z-index: 10;
+    text-transform: none;
+}
+
 #base-header #site-title img{
     height: 38px;
     margin-top: 4px;

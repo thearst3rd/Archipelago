@@ -2,13 +2,7 @@
 
 ## Asset License
 
-The image files used in the page design were specifically designed for archipelago.gg and are **not** covered by the top
-level LICENSE.
-See individual LICENSE files in `./static/static/**`.
-
-You are only allowed to use them for personal use, testing and development.
-If the site is reachable over the internet, have a robots.txt in place (see `ASSET_RIGHTS` in `config.yaml`)
-and do not promote it publicly. Alternatively replace or remove the assets.
+On this branch, I have replaced the static image files in `./static/static/**` with simple replacements to the proprietary archipelago.gg assets. I license these images under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 
 ## Contribution Guidelines
 
