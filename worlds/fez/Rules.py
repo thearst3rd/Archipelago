@@ -42,7 +42,7 @@ def _add_link_door_rule(world: FezWorld, region1: str, region2: str):
 class HasCubes(Rule["FezWorld"], game="Fez"):
     count: int | FieldResolver
     """The number of cubes the player is required to have"""
-    
+
     @override
     def _instantiate(self, world: "FezWorld") -> Rule.Resolved:
         return self.Resolved(
@@ -63,9 +63,9 @@ class HasCubes(Rule["FezWorld"], game="Fez"):
 
         @override
         def _evaluate(self, state: CollectionState) -> bool:
-            return (state.count("Golden Cube", self.player) + 
-                    state.count("Anti-Cube", self.player) + 
-                    (state.count("Cube Bit", self.player)//8) 
+            return (state.count("Golden Cube", self.player) +
+                    state.count("Anti-Cube", self.player) +
+                    (state.count("Cube Bit", self.player)//8)
                     >= self.count)
 
         @override
@@ -286,7 +286,7 @@ def set_tetromino_rules(world: FezWorld):
                    (CanReachRegion("Code Machine") &
                     Has("Sunglasses", options=[OptionFilter(KnowledgeLogic, True)],
                         filtered_resolution=True)))
-    
+
 def set_ability_rules(world: FezWorld):
     """Rules for ability logic"""
     # Helper functions
